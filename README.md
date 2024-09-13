@@ -51,12 +51,14 @@ void loop() {
   delay(1000);  // Delay for 1 second before reading again
 }
 
-Breakdown of the Code
+## Breakdown of the Code
+
 Pin Definition: sensor_pin is set to A0, where the soil moisture sensor is connected.
 Serial Communication: Serial.begin(9600) starts serial communication to display the results on the serial monitor.
 Reading Sensor Data: analogRead(sensor_pin) reads the analog value from the sensor (0-1023).
 Conversion to Percentage: The value is scaled to a percentage:
 moisture_percentage
+
 =
 100
 −
